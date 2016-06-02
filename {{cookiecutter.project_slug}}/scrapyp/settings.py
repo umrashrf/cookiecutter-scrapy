@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for scrapyp project
+# Scrapy settings for {{cookiecutter.project_name}} project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'scrapyp'
+BOT_NAME = '{{cookiecutter.project_slug}}'
 
-SPIDER_MODULES = ['scrapyp.spiders']
-NEWSPIDER_MODULE = 'scrapyp.spiders'
+SPIDER_MODULES = ['{{cookiecutter.project_slug}}.spiders']
+NEWSPIDER_MODULE = '{{cookiecutter.project_slug}}.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'scrapyp (+http://www.yourdomain.com)'
+#USER_AGENT = '{{cookiecutter.project_slug}} (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'scrapyp.middlewares.MyCustomSpiderMiddleware': 543,
+#    '{{cookiecutter.project_slug}}.middlewares.MyCustomSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'scrapyp.middlewares.MyCustomDownloaderMiddleware': 543,
+#    '{{cookiecutter.project_slug}}.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'scrapyp.pipelines.SomePipeline': 300,
+#    '{{cookiecutter.project_slug}}.pipelines.SomePipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
